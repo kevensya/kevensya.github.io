@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 苦X工程师</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on 苦X工程师</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>ponyxiapeng@gmail.com (kevenxia)</managingEditor>
+    <webMaster>ponyxiapeng@gmail.com (kevenxia)</webMaster>
+    <lastBuildDate>Sun, 19 Jul 2015 20:04:30 +0900</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>开始利用Hugo编写博客</title>
+      <link>/post/welcome/</link>
+      <pubDate>Sun, 19 Jul 2015 20:04:30 +0900</pubDate>
+      <author>ponyxiapeng@gmail.com (kevenxia)</author>
+      <guid>/post/welcome/</guid>
+      <description>
+
+&lt;h4 id=&#34;选择的两种静态网页博客系统比较:2cc7dc244eed4480e8b46c91e911e96b&#34;&gt;选择的两种静态网页博客系统比较&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Octopress&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Octopress 是一款基于Jekyll 的静态站点生成系统,使用ruby编写的，使用这个博客系统需要对ruby语言有一定的掌握。因为自己也学习过ruby，而且现在有个朋友正在使用octopress 2.x作为他的博客系统，所以这次的首选是octopress，但是安装过程明显稍显复杂，而且octopress 3.x版本的安装相关说明基本上没有，本次只能放弃。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;利用Go语言编写的静态站点生成系统，&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

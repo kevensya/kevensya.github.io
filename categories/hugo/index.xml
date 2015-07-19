@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on 苦X工程师</title>
-    <link>/categories/hugo/</link>
-    <description>Recent content in Hugo on 苦X工程师</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Hugo on 苦X工程师 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://kevensya.github.io/categories/hugo/</link>
     <language>zh-cn</language>
-    <managingEditor>ponyxiapeng@gmail.com (kevenxia)</managingEditor>
-    <webMaster>ponyxiapeng@gmail.com (kevenxia)</webMaster>
-    <lastBuildDate>Sun, 19 Jul 2015 20:04:30 +0900</lastBuildDate>
-    <atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <author>kevenxia</author>
+    
+    <updated>Sun, 19 Jul 2015 20:04:30 JST</updated>
     
     <item>
       <title>开始利用Hugo编写博客</title>
-      <link>/post/welcome/</link>
-      <pubDate>Sun, 19 Jul 2015 20:04:30 +0900</pubDate>
-      <author>ponyxiapeng@gmail.com (kevenxia)</author>
-      <guid>/post/welcome/</guid>
+      <link>http://kevensya.github.io/post/welcome/</link>
+      <pubDate>Sun, 19 Jul 2015 20:04:30 JST</pubDate>
+      <author>kevenxia</author>
+      <guid>http://kevensya.github.io/post/welcome/</guid>
       <description>
 
 &lt;h4 id=&#34;选择的两种静态网页博客系统比较:2cc7dc244eed4480e8b46c91e911e96b&#34;&gt;选择的两种静态网页博客系统比较&lt;/h4&gt;

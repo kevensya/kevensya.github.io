@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>利用Hugo搭建博客系统 - 苦X工程师</title>
-	<meta name="author" content="map[name:kevenxia email:ponyxiapeng@gmail.com]">
+	<meta name="author" content="map[email:ponyxiapeng@gmail.com name:kevenxia]">
 
 	
 	  
@@ -17,7 +17,7 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
-	<link rel="canonical" href="http://localhost:1313/post/welcome/">
+	<link rel="canonical" href="http://localhost:1313/post/hugo-install/">
 	<link href="http://localhost:1313//favicon.png" rel="shortcut icon">
 	<link href="http://localhost:1313//css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<link href="http://localhost:1313//css/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -98,7 +98,7 @@
     <h1 class="title" itemprop="name">利用Hugo搭建博客系统</h1>
 	<div class="entry-content" itemprop="articleBody">
 
-<h4 id="选择的两种静态网页博客系统比较:2cc7dc244eed4480e8b46c91e911e96b">选择的两种静态网页博客系统比较</h4>
+<h4 id="选择的两种静态网页博客系统比较:a21e4d43a2a98a5640b183c3e7675c3a">选择的两种静态网页博客系统比较</h4>
 
 <ul>
 <li>Octopress</li>
@@ -118,7 +118,7 @@
 
 <hr />
 
-<h4 id="hugo的安装:2cc7dc244eed4480e8b46c91e911e96b">Hugo的安装</h4>
+<h4 id="hugo的安装:a21e4d43a2a98a5640b183c3e7675c3a">Hugo的安装</h4>
 
 <p>安装环境</p>
 
@@ -145,7 +145,7 @@ Homebrew: 0.9.5
 
 <p>如果命令能够正确执行并输出安装的hugo版本表示安装成功，接着就可以利用Hugo生成site。</p>
 
-<h4 id="博客site的生成:2cc7dc244eed4480e8b46c91e911e96b">博客site的生成</h4>
+<h4 id="博客site的生成:a21e4d43a2a98a5640b183c3e7675c3a">博客site的生成</h4>
 
 <p>生成site</p>
 
@@ -167,7 +167,48 @@ Homebrew: 0.9.5
 <pre><code>git clone --recursive https://github.com/spf13/hugoThemes themes
 </code></pre>
 
-<p>这个将从github下载所有的Hugo主题，大小大概有230M左右，下载完成需要等待一段时间。</p>
+<p>这个将从github下载所有的Hugo主题，大小大概有230M左右，下载完成需要等待一段时间。
+themes下载完后，修改config.toml的配置</p>
+
+<pre><code>baseUrl= &quot;http://kevensya.github.io/&quot; -- 发布时的博客url
+languageCode = &quot;zh-cn&quot; -- 语言（目前还没有发现有什么特殊的作用）
+title = &quot;苦X工程师&quot; -- 博客标题
+theme = &quot;greyshade&quot; -- 主题名
+Paginate = 10 -- 分页大小
+
+[author]
+name = &quot;kevenxia&quot;
+email = &quot;xxxx@mail.com&quot;
+
+[params]
+  githubName = &quot;kevensya&quot;
+  description = &quot;Java,VC++,C++,ObjC,C#使用中&quot; -- 博客的描述
+  disqusShortname = &quot;crazykeven&quot;
+  github_user = &quot;kevensya&quot;
+  excerpt_link = &quot;[阅读全文]&quot; -- 博客首页显示博客概要时代替Read More的文本
+</code></pre>
+
+<p>每个主题的配置方法都稍微有些不一样，需要研究主题的layout以及官方关于<a href="http://gohugo.io/templates/overview/">Template的说明</a>进行配置，我这里使用的是<a href="https://github.com/cxfksword/greyshade">greyshade主题</a>。</p>
+
+<p>配置好后，可以生成一个post测试一下。</p>
+
+<pre><code>hugo new post/welcome.md
+</code></pre>
+
+<p>进入content/目录，多了一个post目录，post目录下多了一个welcome.md文件。</p>
+
+<p>启动本地预览服务器</p>
+
+<pre><code>hugo server -w
+</code></pre>
+
+<p>这里加上了-w option，这样编写的博客或者layout有变化后能实时反映到web页面上，不用每次重新启动服务器（但是修改了config.toml文件就必须重新启动服务器后修改才能得到反映）。</p>
+
+<p>在浏览器输入 <a href="http://localhost:1313">http://localhost:1313</a> 就可以看到博客的首页了,首页上显示了刚才生成的welcome的博客。</p>
+
+<h4 id="发布到github:a21e4d43a2a98a5640b183c3e7675c3a">发布到Github</h4>
+
+<p>每个github账号可以发布一个个人页面的站点（Github pages），我就利用这次这个功能发布hugo生成的静态页面。</p>
 </div></article>
 					
 						<div class="share">

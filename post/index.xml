@@ -176,7 +176,7 @@ git commit -m &amp;quot;Update public files&amp;quot;
 git push
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;参考文档&lt;/p&gt;
+&lt;h3 id=&#34;参考文档:a21e4d43a2a98a5640b183c3e7675c3a&#34;&gt;参考文档&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Hugo官方文档：&lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;http://gohugo.io/overview/introduction/&lt;/a&gt;&lt;/p&gt;

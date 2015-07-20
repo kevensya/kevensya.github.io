@@ -208,7 +208,62 @@ email = &quot;xxxx@mail.com&quot;
 
 <h4 id="发布到github:a21e4d43a2a98a5640b183c3e7675c3a">发布到Github</h4>
 
-<p>每个github账号可以发布一个个人页面的站点（Github pages），我就利用这次这个功能发布hugo生成的静态页面。</p>
+<p>每个github账号可以发布一个个人页面的站点（Github pages），我就利用这次这个功能发布hugo生成的静态页面。首先在github建立一个repository，这个repository的名字必须是下面两种格式。</p>
+
+<pre><code>github账户名.github.com
+github账户名.github.io
+</code></pre>
+
+<p><img src="/images/screenshot/Create a New Repository.png" alt="创建repository" /></p>
+
+<p>创建完repository后，暂时回到本地进行操作</p>
+
+<pre><code>hugo -t greyshade
+</code></pre>
+
+<p>利用主题greyshade生成静态html页面，所有的静态页面都在public/中。</p>
+
+<p>进入public目录，创建本地git仓库</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>将.DS_Store文件添加到忽略列表中（.DS_Store是OSX的系统文件）</p>
+
+<pre><code>echo &quot;.DS_Store&quot; &gt;&gt; .gitignore
+</code></pre>
+
+<p>执行下面的命令将生成的页面添加到git仓库</p>
+
+<pre><code>git add -A
+git commit -m &quot;Initial commit&quot;
+</code></pre>
+
+<p>将github仓库添加到本地仓库的远程服务器中</p>
+
+<pre><code>git remote add origin https://github.com/kevensya/kevensya.github.io.git
+</code></pre>
+
+<p>将本地仓库推送到github</p>
+
+<pre><code>git push -u origin master
+</code></pre>
+
+<p>这样就能通过 kevensya.github.io 来访问博客了，如果博客有更新，可以利用下面的命令再次push到github。</p>
+
+<pre><code>hugo -t greyshade
+git add -A
+git commit -m &quot;Update public files&quot;
+git push
+</code></pre>
+
+<p>参考文档</p>
+
+<blockquote>
+<p>Hugo官方文档：<a href="http://gohugo.io/overview/introduction/">http://gohugo.io/overview/introduction/</a></p>
+
+<p>Hugo静态网站生成器中文教程：<a href="http://nanshu.wang/post/2015-01-31/">http://nanshu.wang/post/2015-01-31/</a></p>
+</blockquote>
 </div></article>
 					
 						<div class="share">

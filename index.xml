@@ -127,7 +127,62 @@ email = &amp;quot;xxxx@mail.com&amp;quot;
 
 &lt;h4 id=&#34;发布到github:a21e4d43a2a98a5640b183c3e7675c3a&#34;&gt;发布到Github&lt;/h4&gt;
 
-&lt;p&gt;每个github账号可以发布一个个人页面的站点（Github pages），我就利用这次这个功能发布hugo生成的静态页面。&lt;/p&gt;
+&lt;p&gt;每个github账号可以发布一个个人页面的站点（Github pages），我就利用这次这个功能发布hugo生成的静态页面。首先在github建立一个repository，这个repository的名字必须是下面两种格式。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;github账户名.github.com
+github账户名.github.io
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kevensya.github.io/images/screenshot/Create a New Repository.png&#34; alt=&#34;创建repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建完repository后，暂时回到本地进行操作&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t greyshade
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;利用主题greyshade生成静态html页面，所有的静态页面都在public/中。&lt;/p&gt;
+
+&lt;p&gt;进入public目录，创建本地git仓库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将.DS_Store文件添加到忽略列表中（.DS_Store是OSX的系统文件）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;.DS_Store&amp;quot; &amp;gt;&amp;gt; .gitignore
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;执行下面的命令将生成的页面添加到git仓库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add -A
+git commit -m &amp;quot;Initial commit&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将github仓库添加到本地仓库的远程服务器中&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/kevensya/kevensya.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将本地仓库推送到github&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样就能通过 kevensya.github.io 来访问博客了，如果博客有更新，可以利用下面的命令再次push到github。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t greyshade
+git add -A
+git commit -m &amp;quot;Update public files&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;参考文档&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hugo官方文档：&lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;http://gohugo.io/overview/introduction/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hugo静态网站生成器中文教程：&lt;a href=&#34;http://nanshu.wang/post/2015-01-31/&#34;&gt;http://nanshu.wang/post/2015-01-31/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

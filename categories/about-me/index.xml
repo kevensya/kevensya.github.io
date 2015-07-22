@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>About Me on 苦X工程师 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://kevensya.github.io/categories/about-me/</link>
+    <language>zh-cn</language>
+    <author>kevenxia</author>
+    
+    <updated>Mon, 20 Jul 2015 15:27:09 JST</updated>
+    
+  </channel>
+</rss>

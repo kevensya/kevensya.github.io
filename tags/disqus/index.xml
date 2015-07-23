@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Disqus on 苦X工程师 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://kevensya.github.io/tags/disqus/</link>
+    <language>zh-cn</language>
+    <author>kevenxia</author>
+    
+    <updated>Thu, 23 Jul 2015 14:26:31 JST</updated>
+    
+    <item>
+      <title>greyshade主题的disqus安装配置</title>
+      <link>http://kevensya.github.io/post/disqus-config/</link>
+      <pubDate>Thu, 23 Jul 2015 14:26:31 JST</pubDate>
+      <author>kevenxia</author>
+      <guid>http://kevensya.github.io/post/disqus-config/</guid>
+      <description>
+
+&lt;h4 id=&#34;disqus账号注册:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;disqus账号注册&lt;/h4&gt;
+
+&lt;p&gt;要想使用disqus作为自己的评论系统，首先需要一个disqus账号，可以上&lt;a href=&#34;https://disqus.com/&#34;&gt;disqus&lt;/a&gt;注册一个，注册的步骤就不细说了。&lt;/p&gt;
+
+&lt;h4 id=&#34;登记你的站点:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;登记你的站点&lt;/h4&gt;
+
+&lt;p&gt;这部比较重要，如果没有这一步的话，就没有下面你使用的disqus_shortname了，我在刚开始就是不知道这一步，导致出现&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We were unable to load Disqus&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;的错误,出现这个错误的同时也会给出一个&lt;a href=&#34;https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22&#34;&gt;trouble shooting的链接&lt;/a&gt;，我就只按照这个链接的指示找到问题所在的。&lt;/p&gt;
+
+&lt;p&gt;登记站点很简单，从&lt;a href=&#34;http://disqus.com/admin&#34;&gt;http://disqus.com/admin&lt;/a&gt;可以登记你的站点，如果以前没有添加过站点，那么第一次打开的是这个界面&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://disqus-cloudfront.s3.amazonaws.com/docs/forum-registration-page.png&#34; alt=&#34;登记站点&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果以前登记过站点，这次只需要Add new site就行了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kevensya.github.io/images/screenshot/Moderate-add-new-site-Disqus.png&#34; alt=&#34;Add new site&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上面的disqus url前面需要填写的部分将会成为你的disqus_shortname，需要在下面用到。&lt;/p&gt;
+
+&lt;h4 id=&#34;hugo博客生成系统配置:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;Hugo博客生成系统配置&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;以下的配置都是在greyshade主题下地配置步骤，不同主题可能配置方法会稍有不同&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在需要开放评论的页面中加入comments = true&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+Categories = [&amp;quot;Hugo&amp;quot;]
+Description = &amp;quot;Hugo博客相关&amp;quot;
+Tags = [&amp;quot;Hugo&amp;quot;]
+date = &amp;quot;2015-07-19T20:04:30+09:00&amp;quot;
+menu = &amp;quot;main&amp;quot;
+title = &amp;quot;利用Hugo搭建博客系统&amp;quot;
+comments = true
++++
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;然后配置config.toml，在params中加入下面配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;disqus_short_name = &amp;quot;上面在disqus登记站点时的disqus_shortname&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;博客网页更新:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;博客网页更新&lt;/h4&gt;
+
+&lt;p&gt;做好以上的配置之后，就可以重新生成博客静态网页，并更新到站点上去。如果使用的是github，步骤可以参照我上一篇博客&lt;a href=&#34;http://kevensya.github.io/post/hugo-install&#34;&gt;利用Hugo搭建博客系统&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，也可以在本地利用hugo server -w进行预览。&lt;/p&gt;
+
+&lt;p&gt;至此，disgus配置的步骤也就完成了。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,7 +10,7 @@
     <updated>Thu, 23 Jul 2015 14:26:31 JST</updated>
     
     <item>
-      <title>greyshade主题的disqus安装配置</title>
+      <title>GreyShade主题下disqus的配置</title>
       <link>http://kevensya.github.io/post/disqus-config/</link>
       <pubDate>Thu, 23 Jul 2015 14:26:31 JST</pubDate>
       <author>kevenxia</author>
@@ -19,7 +19,7 @@
 
 &lt;h4 id=&#34;disqus账号注册:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;disqus账号注册&lt;/h4&gt;
 
-&lt;p&gt;要想使用disqus作为自己的评论系统，首先需要一个disqus账号，可以上&lt;a href=&#34;https://disqus.com/&#34;&gt;disqus&lt;/a&gt;注册一个，注册的步骤就不细说了。&lt;/p&gt;
+&lt;p&gt;要想使用disqus作为自己的评论系统，首先需要一个disqus账号，可以上&lt;a href=&#34;https://disqus.com/&#34;&gt;disqus&lt;/a&gt;注册一个，最后需要邮箱激活，因此注册时请提供能够使用的邮箱，我使用的是Gmail邮箱，注册的步骤就不细说了。&lt;/p&gt;
 
 &lt;h4 id=&#34;登记你的站点:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;登记你的站点&lt;/h4&gt;
 
@@ -29,7 +29,7 @@
 &lt;p&gt;We were unable to load Disqus&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;的错误,出现这个错误的同时也会给出一个&lt;a href=&#34;https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22&#34;&gt;trouble shooting的链接&lt;/a&gt;，我就只按照这个链接的指示找到问题所在的。&lt;/p&gt;
+&lt;p&gt;的错误,出现这个错误的同时也会给出一个&lt;a href=&#34;https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22&#34;&gt;trouble shooting的链接&lt;/a&gt;，我就是按照这个链接的提示找到问题所在的。&lt;/p&gt;
 
 &lt;p&gt;登记站点很简单，从&lt;a href=&#34;http://disqus.com/admin&#34;&gt;http://disqus.com/admin&lt;/a&gt;可以登记你的站点，如果以前没有添加过站点，那么第一次打开的是这个界面&lt;/p&gt;
 
@@ -39,11 +39,11 @@
 
 &lt;p&gt;&lt;img src=&#34;http://kevensya.github.io/images/screenshot/Moderate-add-new-site-Disqus.png&#34; alt=&#34;Add new site&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;上面的disqus url前面需要填写的部分将会成为你的disqus_shortname，需要在下面用到。&lt;/p&gt;
+&lt;p&gt;上面的disqus url前面需要填写的部分就是你站点的disqus_shortname，将会在下面用到。&lt;/p&gt;
 
 &lt;h4 id=&#34;hugo博客生成系统配置:ada11f2a84560c6d1d5135f0c6fbc69f&#34;&gt;Hugo博客生成系统配置&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;以下的配置都是在greyshade主题下地配置步骤，不同主题可能配置方法会稍有不同&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以下的配置都是在greyshade主题下的配置步骤，不同主题可能配置方法会稍有不同&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;在需要开放评论的页面中加入comments = true&lt;/p&gt;

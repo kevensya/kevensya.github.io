@@ -3,7 +3,7 @@
   <channel>
       <title>Posts on 苦X工程师 </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>kevensya.github.io/post/</link>
+    <link>http://kevensya.github.io/post/</link>
     <language>zh-cn</language>
     <author>kevenxia</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>利用Hugo搭建博客系统</title>
-      <link>/kevensya.github.io/post/hugo-install/</link>
+      <link>http://kevensya.github.io/post/hugo-install/</link>
       <pubDate>Sun, 19 Jul 2015 20:04:30 JST</pubDate>
       <author>kevenxia</author>
-      <guid>/kevensya.github.io/post/hugo-install/</guid>
+      <guid>http://kevensya.github.io/post/hugo-install/</guid>
       <description>
 
 &lt;h4 id=&#34;选择的两种静态网页博客系统比较:a21e4d43a2a98a5640b183c3e7675c3a&#34;&gt;选择的两种静态网页博客系统比较&lt;/h4&gt;
@@ -133,7 +133,7 @@ email = &amp;quot;xxxx@mail.com&amp;quot;
 github账户名.github.io
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;kevensya.github.io/images/screenshot/Create a New Repository.png&#34; alt=&#34;创建repository&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://kevensya.github.io/images/screenshot/Create a New Repository.png&#34; alt=&#34;创建repository&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;创建完repository后，暂时回到本地进行操作&lt;/p&gt;
 
